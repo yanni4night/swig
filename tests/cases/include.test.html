@@ -1,12 +1,13 @@
 {% include "./includes.html" %}
 
-{% include "./includes.html" with {first: 'Churros', second: 'Nachos'} %}
+{%set data={first: 'Churros', second: 'Nachos'}%}
+{% include "./includes.html" with data=data %}
 
-{% include "./includes.html" with {first: 'Churros', second: 'Nachos'} only %}
+{% include "./includes.html" with data=data only %}
 
 {% include includefile %}
 
-{% include "./notreal" ignore missing %}
+{#% include "./notreal" ignore missing %#}
 
 {% for a in bar %}
   {% include "./include_bar.html" %}

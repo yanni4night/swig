@@ -53,8 +53,8 @@ var cases = {
   'can execute functions': [
     { c: '{{ c() }}', e: 'foobar' },
     { c: '{{ c(1) }}', e: 'barfoo' },
-    { c: '{{ d(1)|default("tacos")|replace("tac", "churr") }}', e: 'churros' },
-    { c: '{{ d()|default("tacos") }}', e: 'tacos' },
+    //{ c: '{{ d(1)|default("tacos")|replace("tac", "churr") }}', e: 'churros' },
+    { c: '{{ d()|default:"tacos" }}', e: 'tacos' },
     { c: '{{ e.f(4, "blah") }}', e: 'eeeee' },
     { c: '{{ q.r(4, "blah") }}', e: '' },
     { c: '{{ e["f"](4, "blah") }}', e: 'eeeee' },
@@ -62,10 +62,10 @@ var cases = {
     { c: '{{ { foo: "bar" }.foo }}', e: 'bar' }
   ],
   'can run multiple filters': [
-    { c: '{{ a|default("")|default(1) }}', e: '1' }
+    { c: '{{ a|default:""|default:1 }}', e: '1' }
   ],
   'can have filters with operators': [
-    { c: '{{ a|default("1") + b|default("2") }}', e: '12' }
+    { c: '{{ a|default:"1" + b|default:"2" }}', e: '12' }
   ],
   'can use both notation types': [
     { c: '{{ food.a }}', e: 'tacos' },

@@ -24,7 +24,7 @@ var rightCases = [
   { code: '-= 1', result: '0' },
   { code: '*= 3', result: '3' },
   { code: '/= 2', result: '0.5' },
-  { code: '= bar|default(1)', result: '1' },
+  { code: '= bar|default:1', result: '1' },
   { code: '= foo === 1', result: 'true' },
   { code: '= 1 === 1 and not false', result: 'true' }
 ];

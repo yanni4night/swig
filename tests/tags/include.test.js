@@ -7,7 +7,7 @@ describe('Tag: include', function () {
     expect(s.render('{% include "foobar" %}')).to.equal('tacos!');
   });
 
-  describe('{% include "foo" ignore missing %}', function () {
+/*  describe('{% include "foo" ignore missing %}', function () {
     it('does not throw if missing', function () {
       expect(swig.render('{% include "foo" ignore missing %}', { filename: '/foo' }))
         .to.equal('');
@@ -22,5 +22,5 @@ describe('Tag: include', function () {
         swig.render('{% include "foo" ignore foobar %}', { filename: '/baz' });
       }).to.throwError(/Expected "missing" on line 1 but found "foobar"\./);
     });
-  });
+  });*/
 });
