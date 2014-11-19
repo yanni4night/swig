@@ -1,3 +1,17 @@
+Port to [Django][django-url]
+====
+
+As you know,[Django][django-url]'s template syntax has lots of differents with swig,for example:
+
+- `include` with an assignment rather than an object defination;
+- `filter` expression with colon rathar than function style;
+- filter functions...
+
+I'm going to adapter swig's syntax to [Django][django-url],but with just *some* of the features above.
+
+This work is still in progress.
+
+
 Swig [![Build Status](http://img.shields.io/travis/paularmstrong/swig/master.svg?style=flat)](http://travis-ci.org/paularmstrong/swig) [![Dependency Status](http://img.shields.io/gemnasium/paularmstrong/swig.svg?style=flat)](https://gemnasium.com/paularmstrong/swig) [![NPM version](http://img.shields.io/npm/v/swig.svg?style=flat)](https://www.npmjs.org/package/swig) [![NPM Downloads](http://img.shields.io/npm/dm/swig.svg?style=flat)](https://www.npmjs.org/package/swig)
 ====
 
@@ -86,3 +100,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+[django-url]:https://www.djangoproject.com/
